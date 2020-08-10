@@ -157,6 +157,18 @@ for fb,v in getdict.items():
 # =============================================================================
 # END        
 # =============================================================================
-        
+# =============================================================================
+#     #example ingest parquet into dataframe
+#     import pyarrow.parquet as pq     
+#     #test=pq.ParquetDataset(filebases[fb][1]+'\\soccode\\soc_2010')#, filters=[('created_pit', '<=', str(gdate)),])
+#     test=pq.ParquetDataset(filelocation)#, filters=[('created_pit', '<=', str(gdate)),])
+#     test=test.read(use_pandas_metadata=True)
+#     test=test.to_pandas()
+#     
+#   
+#     
+#         
+# =============================================================================
+                
    
     
