@@ -8,7 +8,6 @@ Created on Mon Jul 20 13:50:04 2020
 import glob
 import datetime
 import pandas as pd
-from smd import SmartMarketData_internal as smd
 from pathlib import Path
 from pathlib import PurePosixPath
 import pyarrow.parquet as pq
