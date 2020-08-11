@@ -74,7 +74,6 @@ def GetS3BucketObjectList(bucket,accesskeyid,accesskeysecretid):
 # =============================================================================
 def GetFileFromS3_all(localfile,keyname,bucket,accesskeyid,accesskeysecretid):
     from boto.s3.connection import S3Connection
-    import Credentials
     import os
     from pathlib import Path
     #checkiffilegotalready  ???
