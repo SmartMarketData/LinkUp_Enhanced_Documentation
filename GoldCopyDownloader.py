@@ -24,9 +24,10 @@ getdict={'jobs_base':1,
          'scrapelog':1,
          'descriptions':1,
          'reference':1,
-         'advancedAnalytics':1,
+         'analyticsCore':1,
          'auxiliary':1,
-         'aggregates':0#coming soon
+         'analyticsEnhancedJob':1
+         
          }
 # =============================================================================
 # =============================================================================
@@ -112,11 +113,11 @@ def GetFileFromS3_all(localfile,keyname,bucket,accesskeyid,accesskeysecretid):
 # end get file from s3
 # =============================================================================
      
-excludes={'reference':{'SMD':['reftype=CIK','reftype=ManualCheckFlag',
-                 'reftype=MatchScore','reftype=MatchScoreFlag',
-                 'reftype=ticker_ric','reftype=TRBC_BS',
-                 'reftype=TRBC_ES','reftype=TRBC_I',
-                 'reftype=TRBC_IG','reftype=URL']}}
+excludes={}#'reference':{'SMD':['reftype=CIK','reftype=ManualCheckFlag',
+            #     'reftype=MatchScore','reftype=MatchScoreFlag',
+             #    'reftype=ticker_ric','reftype=TRBC_BS',
+              #   'reftype=TRBC_ES','reftype=TRBC_I',
+               #  'reftype=TRBC_IG','reftype=URL']}}
 
 
 for k,v in getdict.items():
